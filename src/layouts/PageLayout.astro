@@ -17,32 +17,12 @@ const resolvedImageWithDomain = new URL(
 
 const { title, description } = Astro.props;
 
-const makeTitle = title;
-
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
-
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <Head title={`${title} | ${SITE.NAME}`} description={description} />
-    <SEO
-      title={makeTitle}
-      description="Marcos von Stremayr | Flutter Developer porfolio website."
-      canonical={canonicalURL}
-      openGraph={{
-        basic: {
-          url: canonicalURL,
-          type: "website",
-          title: `Portfolio - Marcos von Stremayr`,
-          image: resolvedImageWithDomain,
-        },
-        image: {
-          alt: "Marcos von Stremayr Profile Picture",
-        },
-      }}
-    />
   </head>
   <body>
     <Header />
