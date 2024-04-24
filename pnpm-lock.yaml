@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/mdx':
     specifier: ^2.2.0
     version: 2.2.0(astro@4.5.6)
+  '@astrojs/partytown':
+    specifier: ^2.1.0
+    version: 2.1.0
   '@astrojs/rss':
     specifier: ^4.0.5
     version: 4.0.5
@@ -192,6 +195,13 @@ packages:
       vfile: 6.0.1
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@astrojs/partytown@2.1.0:
+    resolution: {integrity: sha512-9fjvTx2hTQpirUh1HnZZtFQaBz2R5ixrrmU/Zam3VZ9CoR3frqtnqg/Dt/i5C3UAlwiN0i8VuKxPx5cHP8yY5A==}
+    dependencies:
+      '@builder.io/partytown': 0.10.1
+      mrmime: 2.0.0
     dev: false
 
   /@astrojs/prism@3.0.0:
@@ -478,6 +488,12 @@ packages:
       '@babel/helper-string-parser': 7.24.1
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@builder.io/partytown@0.10.1:
+    resolution: {integrity: sha512-HTyW2do++3JUFKTLBjTGwhUu4MTwBDq0dBlWaQm7tLaQk237tnHNkBZmquDXkZ6CkSv8aHiIH40Wm2/nxkjQsQ==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
     dev: false
 
   /@emmetio/abbreviation@2.3.3:
@@ -4496,6 +4512,11 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /mrmime@2.0.0:
+    resolution: {integrity: sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==}
+    engines: {node: '>=10'}
+    dev: false
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}

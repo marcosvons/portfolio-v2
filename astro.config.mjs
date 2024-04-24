@@ -5,6 +5,13 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https:/marcosvonstremayr.tech",
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [mdx(), 
+    sitemap(), 
+    tailwind(), 
+    partytown({
+    config: {
+      forward: ["dataLayer.push"],
+      },
+    }),],
   assets: "./public",
 });

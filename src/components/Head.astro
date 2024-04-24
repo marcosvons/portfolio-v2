@@ -36,6 +36,15 @@ const resolvedImageWithDomain = new URL(
 <link rel="icon" type="image/svg+xml" href="/favicon-light.svg" media="(prefers-color-scheme: light)">
 <link rel="icon" type="image/x-icon" href="/favicon-light.svg">
 <meta name="generator" content={Astro.generator} />
+<!-- Google tag (gtag.js) -->
+<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-Q9YPVZJDHH"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q9YPVZJDHH');
+</script>
 <SEO
       title={makeTitle}
       description="Marcos von Stremayr | Flutter Developer porfolio website."
